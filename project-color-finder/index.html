@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 class="title">Color Finder</h1>
+        <div class="select-section">
+            <input type="color" id="color-input" class="color-input"/>
+            <select name="scheme" class="scheme-select" id="scheme-select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <select name="count" class="scheme-count" id="scheme-count">
+                <option value="0" selected disabled hidden>Select a Count</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <button id="get-color" class="get-color">Get color scheme</button>
+        </div>
+        <div id="color-section" class="color-section">
+            <!-- Colors -->
+        </div>
+        <div class="copy-msg-group">
+            <h3 class="copy-msg" id="copy-msg">Color Hex copied to Clipboard</h3>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
